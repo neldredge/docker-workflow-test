@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: docker-action-test step
       id: foo
-      uses: neldredge/docker-action-test@v1
+      uses: neldredge/docker-action-test@v2
     # Use the output from the `foo` step
     - name: Get the result
       run: echo "This one goes to ${{ steps.foo.outputs.result }}"
